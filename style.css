@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+section {
+    padding: 4rem 0 3rem;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.log {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.menu__content {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.menu__content h3 {
+    margin: 0 50px;
+}
+
+.menu__content h3:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* Cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%); 
+    transition: 0.3s;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+} 
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.tr img {
+    height: 270px;
+    border-radius: 8px;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--text-color);
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.shop {
+    margin-top: 2rem;
+}
+
+/* shop content */
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-box:hover {
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.add-cart:hover {
+    background: hsl(249, 32%, 17%);
+}
+
+/* responsive */
+@media (max-width: 1080px) {
+    .nav {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 3rem 0 2rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .shop {
+        margin: 2rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav {
+        padding: 11px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .cart {
+        width: 320px;
+    }
+}
+
+@media (max-width: 360px) {
+    .shop {
+        margin-top: 1rem !important;
+    }
+
+    .cart {
+        width: 280px;
+    }
+}
+
+
+/* ----------chat-------------- */
+#chatbox {
+    position: fixed;
+    bottom: 2%;
+    right:  2%;
+    width: 20%;
+    height: 60%;
+    background-color:#e1dada;
+    box-shadow: 0  0 10px var(--text-color);
+    border-radius: 21px;
+    transition: opacity 0.2s;
+}
+
+#chatbox .header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatbox .header .title {
+    font-weight: bold;
+}
+
+#chatbox .content {
+    position: relative;
+    height: 75%;
+    overflow-y: scroll;
+    padding: 10px;
+    position: relative;
+    top: -0%;
+}
+
+#chatbox .message-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Added */
+    align-items: flex-end; /* Added */
+    margin-bottom: 10px;
+}
+
+#chatbox .message-container1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Added */
+    align-items: flex-start; /* Added */
+    margin-bottom: 10px;
+}
+
+#chatbox .message-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#chatbox .message-container1.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#chatbox .message-container .message {
+    font-size: 18px;
+    background-color: rgb(0, 135, 250);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+    transition: box-shadow 0.5s ease;
+}
+
+#chatbox .message-container1 .message {
+    font-size: 18px;
+    background-color: #77dd77;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+#chatbox .message-container .timestamp {
+    font-weight: bolder;
+    font-size: 13px;
+    color: gray; 
+}
+ 
+#chatbox .message-container1 .timestamp {
+    font-weight: bolder;
+    font-size: 13px; /* Adjust the font size as desired */
+    color: gray; /* Adjust the color as desired */
+}
+
+#chatbox .input-container {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 11px;
+    position: absolute;
+    bottom: 0%;
+    left: -0.2%;
+    background-color: #000000;
+    width: 94.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#minimize-btn {
+    cursor: pointer;
+}
+
+#chatbox .input-container input[type="text"] {
+    border-radius: 20px;
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#message-input {
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+#chatbox .input-container button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#send-btn {
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0  0 5px 3px var(--text-color);
+    color: white;
+    background-color:var(--main-color);
+    border-radius: 30%;
+    border: none;
+}
+
+#minimize-btn {
+    border-radius: 20px; 
+    height: 1.5em;
+    width: 1.5em;
+    color: #fff;
+    background-color: var(--main-color);
+    font-size: 25px;
+    border: none;
+}
+
+.other-user-message {
+    justify-content: flex-start;
+}
+
+#chatcircle{
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    background-color: var(--main-color);
+    transition: opacity visibility 0.2s;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}

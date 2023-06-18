@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="icon" href="images/icon.svg">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Ecommerce</a>
+            <!-- content -->
+            <div class="menu__content hidden">
+                <h3><a href="#technic">Technic</a></h3>
+                <h3><a href="#clothes">Clothes</a></h3>
+                <h3><a href="#food">Food</a></h3>
+            </div>
+
+            <i class="bx bx-shopping-bag" id="cart-icon"></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Buttom -->
+                <button class="btn-buy" type="button">Buy Now</button>
+                <!-- Cart Close -->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Technic -->
+    <section class="shop container" id="technic">
+        <h2 class="section-title">Technic</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box" id="101">
+                <img src="images/IphoneX.png" alt="" class="product-img">
+                <h2 class="product-title">IPHONE X</h2>
+                <span class="price">₾1300</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box" id="102">
+                <img src="images/earbuds.jpg" alt="" class="product-img">
+                <h2 class="product-title">WIRELESS EARBUDS</h2>
+                <span class="price">₾100</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box" id="103">
+                <img src="images/fridge.jpg" alt="" class="product-img">
+                <h2 class="product-title">Samsung RT32K5132S8/WT</h2>
+                <span class="price">₾1445</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box" id="104">
+                <img src="images/xiaomi.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Xiaomi Redmi 12 LTE</h2>
+                <span class="price">₾1500</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box" id="105">
+                <img src="images/acer.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Acer Aspire 3</h2>
+                <span class="price">₾2200</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box" id="106">
+                <img src="images/scooter.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Xiaomi Mi Electric Scooter 4 Pro Black</h2>
+                <span class="price">₾770</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box" id="107">
+                <img src="images/dron.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Mavic 3 Combo</h2>
+                <span class="price">₾630</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box" id="108">
+                <img src="images/jbl.jpeg" alt="" class="product-img">
+                <h2 class="product-title">JBL PartyBox 710</h2>
+                <span class="price">₾150</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clothes -->
+    <section class="shop container" id="clothes">
+        <h2 class="section-title">Clothes</h2>
+        <!-- Content -->
+        <div class="shop-content" id="201">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="images/shirt.jpg" alt="" class="product-img">
+                <h2 class="product-title">AEROREADY SHIRT</h2>
+                <span class="price">₾50</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box tr" id="202">
+                <img src="images/trousers.avif" alt="" class="product-img">
+                <h2 class="product-title">TROUSERS</h2>
+                <span class="price">₾80</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box" id="203">
+                <img src="images/hood.jpg" alt="" class="product-img">
+                <h2 class="product-title">HOODED PARKA</h2>
+                <span class="price">₾210</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box tr" id="204">
+                <img src="images/dress.jpg" alt="" class="product-img">
+                <h2 class="product-title">DRESS</h2>
+                <span class="price">₾150</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box" id="205">
+                <img src="images/sunglasses.jpg" alt="" class="product-img">
+                <h2 class="product-title">METAL Sunglasses</h2>
+                <span class="price">₾210</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box" id="206">
+                <img src="images/hat.jpg" alt="" class="product-img">
+                <h2 class="product-title">BlACK HAT</h2>
+                <span class="price">₾20</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box" id="207">
+                <img src="images/backpack.jpg" alt="" class="product-img">
+                <h2 class="product-title">BACKPACK</h2>
+                <span class="price">₾80</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box" id="208">
+                <img src="images/boost.jpg" alt="" class="product-img">
+                <h2 class="product-title">ULTRABOOST 22</h2>
+                <span class="price">₾155</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+    
+    <!-- food -->
+    <section class="shop container" id="food">
+        <h2 class="section-title">Food</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box" id="301">
+                <img src="images/bread.jpg" alt="" class="product-img">
+                <h2 class="product-title">ბაგეტი რუხი</h2>
+                <span class="price">₾1.2</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box" id="302">
+                <img src="images/energyDrink.jpg" alt="" class="product-img">
+                <h2 class="product-title">ენერგეტიკული სასმელი BLUE BEAR</h2>
+                <span class="price">₾2.1</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box" id="303">
+                <img src="images/kinder.jpg" alt="" class="product-img">
+                <h2 class="product-title">შოკოლადის კვერცხი</h2>
+                <span class="price">₾1.8</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box" id="304">
+                <img src="images/spagetti.jpg" alt="" class="product-img">
+                <h2 class="product-title">სპაგეტი</h2>
+                <span class="price">₾4</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box" id="305">
+                <img src="images/miusli.jpg" alt="" class="product-img">
+                <h2 class="product-title">მიუსლი ხილით</h2>
+                <span class="price">₾7</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box" id="306">
+                <img src="images/sardinebi.jpg" alt="" class="product-img">
+                <h2 class="product-title">სარდინები</h2>
+                <span class="price">₾4</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box" id="307">
+                <img src="images/souce.jpg" alt="" class="product-img">
+                <h2 class="product-title">სოიოს სოუსი</h2>
+                <span class="price">₾3</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box" id="308">
+                <img src="images/clasic.jpg" alt="" class="product-img">
+                <h2 class="product-title">ფუნთუშა კლასიკი</h2>
+                <span class="price">₾0.7</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <div id="chatbox">
+        <div class="header">
+          <div class="title" id="user-name"></div>
+            <a href="#"> <button onclick="minimize()" id="minimize-btn">-</button></a>
+        </div>
+        <div class="content" id="chat-content">
+            <!-- Message containers will be added here dynamically -->
+        </div>
+        <div class="input-container">
+          <input type="text" id="message-input" placeholder="Type a message..." />
+          <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <a href="#"><button id="chatcircle" onclick="maximize()">+</button></a>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
